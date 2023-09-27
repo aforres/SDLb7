@@ -21,7 +21,7 @@ class ArticleView(ArticleViewTemplate):
     # set the `self.item` property of the ArticleEdit Form to a copy of the article to be updated
     save_clicked = alert(
       content=ArticleEdit(item=article_copy),
-      title="Update Article",
+      title="Update Text Item",
       large=True,
       buttons=[("Save", True), ("Cancel", False)]
     )

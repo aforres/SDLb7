@@ -7,13 +7,14 @@ services:
 startup: {type: form, module: Homepage}
 package_name: News_App
 allow_embedding: false
-name: Clone of News App
+name: Student Digital Library b7
 runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
+metadata: {title: Student Digital Library, description: Student Digital Library, logo_img: 'asset:traypacerlogo.png'}
 startup_form: null
 db_schema:
   articles:
     title: Articles
-    client: none
+    client: search
     server: full
     columns:
     - name: title
@@ -43,4 +44,30 @@ db_schema:
     - name: name
       admin_ui: {width: 200}
       type: string
+  users:
+    title: Users
+    client: none
+    server: full
+    columns:
+    - name: email
+      admin_ui: {width: 200}
+      type: string
+    - name: enabled
+      admin_ui: {width: 200}
+      type: bool
+    - name: last_login
+      admin_ui: {width: 200}
+      type: datetime
+    - name: password_hash
+      admin_ui: {width: 200}
+      type: string
+    - name: n_password_failures
+      admin_ui: {width: 200}
+      type: number
+    - name: confirmed_email
+      admin_ui: {width: 200}
+      type: bool
+    - name: signed_up
+      admin_ui: {width: 200}
+      type: datetime
 renamed: true

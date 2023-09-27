@@ -10,7 +10,7 @@ components:
   components:
   - type: Button
     properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: 'Add an Article
+      foreground: '', visible: true, text: 'Add text and image
 
         ', font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: large,
       italic: false, background: '', bold: false, underline: false, icon: 'fa:plus-circle'}
@@ -29,7 +29,7 @@ components:
   layout_properties: {slot: nav-right}
 - type: Label
   properties: {role: title, align: left, tooltip: '', border: '', foreground: '',
-    visible: true, text: News App, font_size: null, font: '', spacing_above: small,
+    visible: true, text: Student Digital Library b7, font_size: null, font: '', spacing_above: small,
     icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
     underline: false, icon: ''}
   name: label_1
