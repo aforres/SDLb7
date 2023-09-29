@@ -26,7 +26,7 @@ class Homepage(HomepageTemplate):
     # Open an alert displaying the 'ArticleEdit' Form
     save_clicked = alert(
       content=ArticleEdit(item=new_article),
-      title="Add Article",
+      title="Add Dental Instrument",
       large=True,
       buttons=[("Save", True), ("Cancel", False)]
     )
