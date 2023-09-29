@@ -15,7 +15,9 @@ class Homepage(HomepageTemplate):
     self.refresh_articles()
       # Set an event handler on the RepeatingPanel (our 'articles_panel')
     self.articles_panel.set_event_handler('x-delete-article', self.delete_article)
-    user = anvil.users.login_with_form()
+    
+    # login_with_form([show_signup_option=True], [remember_by_default=True], [allow_remembered=True], [allow_cancel=False])
+    user = anvil.users.login_with_form(show_signup_option=True, remember_by_default=True, allow_remembered=True, allow_cancel=False)
 
   def add_article_button_click(self, **event_args):
     """This method is called when the button is clicked"""
